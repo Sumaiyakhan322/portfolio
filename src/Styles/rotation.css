@@ -1,0 +1,24 @@
+.rotating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .rotating-image {
+    border-radius: 50%; /* Apply rounded corners to make the image circular */
+    /* Add any additional styles for your image */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  [data-aos="rotate"] {
+    animation: rotate 5s linear infinite;
+  }
