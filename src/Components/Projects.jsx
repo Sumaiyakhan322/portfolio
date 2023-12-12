@@ -21,7 +21,7 @@ import { IoLogoNodejs } from "react-icons/io5";
 
 const Projects = () => {
   return (
-    <div className="bg-gradient-to-r from-black to bg-gray-700 md:p-20 p-10 text-white border border-red-700 ">
+    <div id="projects" className="bg-gradient-to-r from-black to bg-gray-700 md:p-20 p-10 text-white  ">
       <h2 className="text-4xl text-center font-bold my-10">
         My Top 3 Projects
       </h2>
@@ -53,10 +53,10 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="space-y-4 md:w-3/4">
+          <div className="space-y-4 md:w-3/4 ">
             <h2 className="text-3xl font-bold">Project Name:<span className="text-lime-300">Fit-Flex-Online</span></h2>
             <p className="font-bold">Project Short Description:<span className="font-normal">This is a online gym platform.Where One can esaily joins classes.We have many trainers they provides classes in many time slots.Members can easily apply for a trainer and embark on a transformative fitness experience. Join us and make every workout count towards a healthier, stronger you!</span></p>
-            <p className="font-bold flex gap-5 md:flex-row flex-col">Tools Used in this project: <span> <div className="flex items-center justify-center  text-3xl  gap-10 text-lime-400 ">
+            <p className="font-bold flex gap-5 md:flex-row flex-col">Tools Used in this project: <span> <div className="flex md:items-center md:justify-center  text-3xl  md:gap-10 gap-2 text-lime-400 ">
             <SiTailwindcss className="hover:text-lime-300"></SiTailwindcss>
             <RiJavascriptFill className="hover:text-lime-300"></RiJavascriptFill>
             <FaReact className="hover:text-lime-300"></FaReact>
@@ -97,7 +97,7 @@ const Projects = () => {
           <div className="space-y-4 md:w-3/4 ">
             <h2 className="text-3xl font-bold">Project Name:<span className="text-lime-300">Foody-Brands</span></h2>
             <p className="font-bold">Project Short Description:<span className="font-normal">The website includes a login and register page, allowing users to navigate between them. Users who are logged in can add products on the `Add to Product`` page, and these products are stored in a database.Clicking on a brand name displays all products associated with that brand. If there are no products for a particular brand, a message indicating the absence of products is shown. The `All Brands Product`` page displays cards for all products, each containing `Details`` and `Update`buttons.</span></p>
-            <p className="font-bold flex gap-5 md:flex-row flex-col ">Tools Used in this project: <span> <div className="flex items-center justify-center  text-3xl  gap-10 text-lime-400 ">
+            <p className="font-bold flex gap-5 md:flex-row flex-col ">Tools Used in this project: <span> <div className="flex items-center justify-center  text-3xl  md:gap-10 gap-2 text-lime-400 ">
             <SiTailwindcss className="hover:text-lime-300"></SiTailwindcss>
             <RiJavascriptFill className="hover:text-lime-300"></RiJavascriptFill>
             <FaReact className="hover:text-lime-300"></FaReact>
@@ -137,7 +137,7 @@ const Projects = () => {
           <div className="space-y-4 md:w-3/4 ">
             <h2 className="text-3xl font-bold">Project Name:<span className="text-lime-300">Web-Bazaar</span></h2>
             <p className="font-bold">Project Short Description:<span className="font-normal">This website features six main sections, including a navigation bar, banner, a display of all brands with images, a team section, features, and a footer. It offers both login and register pages, allowing users to seamlessly switch between them. Once logged in, users can access the `Add Jobs`` page, enabling them to add jobs that will be stored in the database.In the My Posts Jobs section, users can view and manage the jobs they have posted, with options to update or delete them. The home page showcases tabs with all available jobs, allowing users to bid on any job except their own.For bid management, the Bid Requests page displays bids on the user`s posted jobs, providing options to accept or reject bids. If a user takes action, the corresponding button is hidden. In the My Bids section, users can track the status of jobs they have bid on, categorized as in progress, pending, or complete. In the `In Progress`` status, users can complete the job.</span></p>
-            <p className="font-bold flex gap-5 md:flex-row flex-col ">Tools Used in this project: <span> <div className="flex items-center justify-center  text-3xl  gap-10 text-lime-400 ">
+            <p className="font-bold flex gap-5 md:flex-row flex-col ">Tools Used in this project: <span> <div className="flex items-center justify-center  text-3xl md:gap-10 gap-2 text-lime-400 ">
             <SiTailwindcss className="hover:text-lime-300"></SiTailwindcss>
             <RiJavascriptFill className="hover:text-lime-300"></RiJavascriptFill>
             <FaReact className="hover:text-lime-300"></FaReact>

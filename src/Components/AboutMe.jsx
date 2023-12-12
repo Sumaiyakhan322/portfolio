@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "../../src/Styles/rotation.css";
 import img from "../../src/assets/aboutme.jpg";
 
+
 const AboutMe = () => {
   useEffect(() => {
     Aos.init({
@@ -12,9 +13,9 @@ const AboutMe = () => {
   }, []);
   return (
     <>
-    <div className=" bg-gradient-to-r from-black to bg-gray-700 md:p-20 p-10">
+    <div id="about" className=" bg-gradient-to-r from-black to bg-gray-700 md:p-20 p-10">
       <div className="flex items-center text-white md:flex-row flex-col gap-10">
-        <div className="md:w-1/2 w-full space-y-5">
+        <div className="md:w-1/2 w-full space-y-5" data-aos="fade-up">
           <h2 className="text-4xl ">About Me</h2>
           <p>I AM AVAILABLE FOR FRONT END PROJECTS</p>
           <p>
@@ -29,11 +30,13 @@ const AboutMe = () => {
             front-end frameworks, version control systems, and deploying
             applications to cloud platforms.
           </p>
-          <button className="btn text-lime-300 bg-black hover:bg-gray-900 rounded-full px-10">
+         
+          <a className="btn text-lime-300 bg-black hover:bg-gray-900 rounded-full px-10" href="#expreience">
             My Experience
-          </button>
+          </a>
+         
         </div>
-        <div className="md:w-1/2 w-full rounded-lg">
+        <div className="md:w-1/2 w-full rounded-lg" data-aos="fade-down">
           <img src={img} alt="" className="rounded-xl" />
         </div>
         

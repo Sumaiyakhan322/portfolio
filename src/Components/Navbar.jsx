@@ -1,24 +1,37 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+
 import logo from '../../src/assets/logo.png';
 
 const Navbar = () => {
     const navLinks=<>
     <li><a>Home</a></li>
-    <li><a>About me</a></li>
+    <li><a href="#about">About me</a></li>
         <li>
-          <a>Experience</a>
+          <a href="#expreience">Experience</a>
           
         </li>
-        <li><a href="#about">Projects</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     
     </>
+
+const downloadPdf = ()=>{
+  console.log('Clicked');
+          fetch("../../public/resume.pdf").then((response) => {
+            response.blob().then((blob) => {
+              // Creating new object of PDF file
+              const fileURL = window.URL.createObjectURL(blob);
+              // Setting various property values
+              let alink = document.createElement("a");
+              alink.href = fileURL;
+              alink.download = "../../public/resume.pdf";
+              alink.click();
+            });
+          });
+}
     return (
         <div>
-            <div className="w-full fixed z-10">
-<div className="navbar max-w-7xl bg-gray-900 text-lime-400 ">
+            <div className="bg-[#166534] w-full fixed z-10 ">
+<div className="navbar max-w-7xl bg-zinc-800 text-lime-400 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,17 +41,22 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <img src={logo} alt="" />
+    <img src={logo} alt="" className='rounded-full' />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {navLinks}
     </ul>
   </div>
-  <div className="navbar-end space-x-4">
-    <a className=""  href="https://www.linkedin.com/in/sumaiya-khan-917b01265/" ><FaLinkedin></FaLinkedin></a>
+  <div className="md:navbar-end ">
+    {/* <a className=""  href="https://www.linkedin.com/in/sumaiya-khan-917b01265/" ><FaLinkedin></FaLinkedin></a>
     <a className="" href="https://www.facebook.com/profile.php?id=100045201829910" target="_blank"  rel="noopener noreferrer"  ><FaFacebook></FaFacebook></a>
-    <a className="" href="sumaiya.khan32665@gmail.com"><MdEmail></MdEmail></a>
+    <a className="" href="sumaiya.khan32665@gmail.com"><MdEmail></MdEmail></a> */}
+      <div>
+                <button className="btn text-lime-300 bg-black hover:bg-gray-900 rounded-full px-10" onClick={downloadPdf}>
+                  RESUME
+                </button>
+              </div>
   </div>
 </div>
         </div> 
